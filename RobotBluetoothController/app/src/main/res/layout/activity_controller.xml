@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Disconnected"
+            android:textColor="#C0FFC0"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/txtConnectedDevice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp">
+
+            <ImageButton
+                android:id="@+id/btnUp"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="@drawable/round_button"
+                android:src="@android:drawable/arrow_up_float"
+                android:contentDescription="Up"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnLeft"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:background="@drawable/round_button"
+                    android:src="@android:drawable/arrow_down_float"
+                    android:rotation="90"
+                    android:contentDescription="Left"/>
+
+                <ImageButton
+                    android:id="@+id/btnStop"
+                    android:layout_width="84dp"
+                    android:layout_height="84dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/round_button_danger"
+                    android:src="@android:drawable/ic_media_pause"
+                    android:contentDescription="Stop"/>
+
+                <ImageButton
+                    android:id="@+id/btnRight"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:background="@drawable/round_button"
+                    android:src="@android:drawable/arrow_up_float"
+                    android:rotation="90"
+                    android:contentDescription="Right"/>
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btnDown"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="@drawable/round_button"
+                android:src="@android:drawable/arrow_down_float"
+                android:contentDescription="Down"
+                android:layout_marginTop="16dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Custom Commands"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginTop="24dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="12dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSpeed1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Speed 1"
+                app:backgroundTint="@color/surface"
+                android:textColor="@color/accent"
+                android:layout_marginEnd="8dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSpeed2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Speed 2"
+                app:backgroundTint="@color/surface"
+                android:textColor="@color/accent"
+                android:layout_marginEnd="8dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSpeed3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Speed 3"
+                app:backgroundTint="@color/surface"
+                android:textColor="@color/accent"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtDeviceId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#AAAAAA"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</ScrollView>

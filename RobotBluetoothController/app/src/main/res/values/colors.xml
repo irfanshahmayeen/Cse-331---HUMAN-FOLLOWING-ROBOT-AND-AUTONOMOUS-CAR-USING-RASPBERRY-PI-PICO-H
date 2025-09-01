@@ -1,0 +1,12 @@
+<resources>
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_500">#6750A4</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="background">#111015</color>
+    <color name="surface">#1B1A1F</color>
+    <color name="accent">#B9A5FE</color>
+    <color name="danger">#FF4D4F</color>
+</resources>
